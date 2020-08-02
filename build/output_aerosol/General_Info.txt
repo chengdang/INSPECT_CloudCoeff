@@ -1,0 +1,8 @@
+ n_Wavelengths =           61 
+n_Radii =           36 
+n_Types =            8 
+n_RH =           36 
+n_Legendre_Terms =           37 
+n_Phase_Elements =            1 
+Release:            3 
+Version:            4

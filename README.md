@@ -40,3 +40,9 @@ Please see the file `LICENSE.txt` for details.
 
 # References
 Stegmann, P. G., G. Tang, P. Yang, B. T. Johnson (2018): "A stochastic model for density-dependent microwave Snow- and Graupel scattering coefficients of the NOAA JCSDA community radiative transfer model.", J. Quant. Spec. Rad. Trans. 211, 9-24.
+
+
+# Updates by Cheng DANG, Aug 02, 2020:
+Adding programs to inspect binary aerosol coefficient lookup table
+
+
