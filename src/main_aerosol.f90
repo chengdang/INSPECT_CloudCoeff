@@ -19,10 +19,11 @@
 !
 !	Date: 	    Author:        Description:
 ! =====       =======        ============
-! 2020-07-30  C. Dang        Aerosol coefficient inspect code
+! 2020-07  C. Dang           Aerosol coefficient inspect code
 !                            Code description and format follow main.f90
 !                            by Patrick Stegmann
-!
+! 2020-09  C. Dang           Add CRTM Aerosol NetCDF IO subroutines
+! 
 ! Copyright © 2018 Patrick Stegmann
 !
 ! This file is part of INSPECT_AerosolCoeff.
@@ -116,7 +117,7 @@ PROGRAM inspect_AerosolCoeff
     Bin_Default_AerosolCoeff_File    = 'AerosolCoeff.bin'
     Filename  = Bin_Default_AerosolCoeff_File
     File_Path  = '../fix/'
-    FP_output = './output_aerosol/Binary'
+    FP_output = './output_aerosol/Binary/'
 
     ! ...Add the file path
     Bin_AerosolCoeff_File = TRIM(ADJUSTL(File_Path))//TRIM(Filename)
@@ -267,7 +268,7 @@ PROGRAM inspect_AerosolCoeff
     NC_Default_AerosolCoeff_File    = 'AerosolCoeff.nc'
     Filename  = NC_Default_AerosolCoeff_File
     File_Path  = '../fix/'
-    FP_output = './output_aerosol/NetCDF'
+    FP_output = './output_aerosol/NetCDF/'
 
     ! ...Add the file path
     NC_AerosolCoeff_File = TRIM(ADJUSTL(File_Path))//TRIM(Filename)
@@ -327,7 +328,6 @@ PROGRAM inspect_AerosolCoeff
     !-------------------------------------------------------
 
     ! Select aerosol type
-    WRITE(*,*) "NetCDF IO"
     WRITE(*,*) "Please select the aerosol type by number:"
     WRITE(*,*) "1: Dust"
     WRITE(*,*) "2: Sea salt-SSAM"
